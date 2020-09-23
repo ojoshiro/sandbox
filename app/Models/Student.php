@@ -10,7 +10,6 @@ class Student extends Person
 {
     use HasFactory;
     protected $table = 'person';
-    protected $hidden = ['role'];
     protected $guarded = ['id', 'role', 'created_at', 'updated_at'];
 
     protected static function booted()
