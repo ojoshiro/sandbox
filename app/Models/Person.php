@@ -9,4 +9,5 @@ class Person extends Model
 {
     use HasFactory;
     protected $filter = null;
+    protected $hidden = ['role'];
 }
